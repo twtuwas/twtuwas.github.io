@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
 }
 
 html{
@@ -262,7 +263,7 @@ html{
 
 .main__content h1{
     font-size: 4rem;
-    background-color: red;
+    background-color: white;
     background-image: linear-gradient(to top, rgb(204, 25, 25) 0%, rgb(231, 52, 52) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
@@ -273,8 +274,8 @@ html{
 }
 .main__content h2{
     font-size: 2rem;
-    background-color: red;
-    background-image: linear-gradient(to top, rgb(204, 25, 25) 0%, rgb(231, 52, 52) 100%);
+    background-color: white;
+    /*background-image: linear-gradient(to top, rgb(204, 25, 25) 0%, rgb(231, 52, 52) 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -627,5 +628,76 @@ html{
     }
 }
 
+.bg__img{
+  width: 100%;
+  height: 50vh;
+}
 
+.img{
+    width: 100%;
+    height: 50vh;
+    background-image: url(images/kifrei.jpg);
+    background-size: cover;
+    background-position: 69%;
+    border-radius: 4px;
+    
+}
 
+/*Aktionen Seiten CSS*/
+
+.headline__aktion{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.headline__aktion h2{
+    font-size: 4rem;
+    background-color: red;
+    background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+}
+
+.aktion__content{
+    margin: 20px auto;
+    width: 60%;
+}
+
+.aktion__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background: white;
+}
+
+#kifrei__imgs{
+    max-width: 320px;
+    float: left;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.text__box{
+    color: black;
+}
+
+.text__box h2{
+    font-size: 36px;
+}
+
+.text__box p{
+    font-size: 20px;
+}
+
+@media screen and (max-width:1100px) {
+    #kifrei__imgs{
+        float: none;
+    }
+    
+}
