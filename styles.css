@@ -663,7 +663,6 @@ html{
 }
 
 .aktion__content{
-    margin: 20px auto;
     width: 60%;
 }
 
@@ -698,6 +697,7 @@ html{
 @media screen and (max-width:1100px) {
     #kifrei__imgs{
         float: none;
+        max-width: 280px;
     }
     
 }
