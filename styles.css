@@ -661,6 +661,7 @@ html{
 .headline__aktion{
     text-align: center;
     margin-top: 15px;
+    
 }
 
 .headline__aktion h2{
@@ -712,7 +713,10 @@ html{
         float: none;
         max-width: 280px;
     }
-    
+
+    .headline__aktion h2{
+        font-size: 3rem;
+    }
 }
 
 .news__date__container{
