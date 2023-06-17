@@ -834,3 +834,7 @@ flex-wrap: wrap;
     -moz-text-fill-color: black;
     font-size: 1.5rem;
 }
+
+#intro{
+    height: 15px;
+}
