@@ -21,7 +21,12 @@ html{
     position: sticky;
     top: 0;
     z-index: 999;
+    position: relative;
+    box-shadow: 0 15px 50px black; 
 }
+
+
+
 
 .navbar__container{
     display: flex;
@@ -386,7 +391,8 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 150vh;
+    margin-bottom: 20px;
+    
 }
 
 .actions h1{
@@ -474,17 +480,10 @@ html{
     cursor: pointer;
 }
 
-@media screen and (max-width:1745px){
-    .actions{
-        height: 2000px;
-    }
 
-}
 
 @media screen and (max-width: 1312px) {
-    .actions{
-        height: 2500px;
-    }
+   
 
     .actions h1{
         font-size: 3rem;
@@ -497,9 +496,7 @@ html{
 
 
 @media screen and (max-width:900px){
-    .actions{
-        height: 2500px;
-    }
+   
 
     .actions h1{
         font-size: 3rem;
@@ -510,12 +507,7 @@ html{
     }
 }
 
-@media screen and (max-width:680px){
-    .actions{
-        height: 4750px;
-    }
 
-}
 
 /*Footer*/
 
