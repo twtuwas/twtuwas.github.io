@@ -11,7 +11,8 @@ html{
 }
 
 .navbar{
-    background: rgb(16, 192, 16);
+    background: linear-gradient(to right, #98FB98 0%, #FF7373 50%, #98FB98 100%);
+    background-size: 100%;;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -129,7 +130,7 @@ html{
     }
 
     .navbar__menu.active{
-        background: rgb(16, 192, 16);
+        background: linear-gradient(to right, #98FB98 0%, #FF7373 50%, #98FB98 100%);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -264,7 +265,8 @@ html{
 .main__content h1{
     font-size: 4rem;
     background-color: white;
-    background-image: linear-gradient(to top, rgb(204, 25, 25) 0%, rgb(231, 52, 52) 100%);
+    background-image: linear-gradient(to top, rgb(204, 25, 25) 0%, rgb(231, 52, 52) 100%); 
+  
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -458,7 +460,7 @@ html{
     border: none;
     outline: none;
     border-radius: 4px;
-    background: green;
+    background:linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
     position: absolute;
     top: 440px;
     left: 30px;
@@ -468,13 +470,20 @@ html{
 
 .actions__card:hover{
     transform: scale(1.075);
-    transition: 0.2 ease-in;
+    transition: 0.2s ease-in;
     cursor: pointer;
+}
+
+@media screen and (max-width:1745px){
+    .actions{
+        height: 2000px;
+    }
+
 }
 
 @media screen and (max-width: 1312px) {
     .actions{
-        height: 1900px;
+        height: 2500px;
     }
 
     .actions h1{
@@ -489,7 +498,7 @@ html{
 
 @media screen and (max-width:900px){
     .actions{
-        height: 2000px;
+        height: 2500px;
     }
 
     .actions h1{
@@ -503,7 +512,7 @@ html{
 
 @media screen and (max-width:680px){
     .actions{
-        height: 3700px;
+        height: 4750px;
     }
 
 }
@@ -511,7 +520,7 @@ html{
 /*Footer*/
 
 .footer__container{
-    background-color: green;
+    background: linear-gradient(to right, #98FB98 0%, #FF7373 50%, #98FB98 100%);
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
@@ -678,19 +687,30 @@ html{
 
 .aktion__content{
     width: 60%;
+
 }
 
 .aktion__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
     min-height: 50vh;
-    background: white;
+    background: rgb(255, 255, 255);
 }
 
-#kifrei__imgs{
+#kifrei__imgs1{
     max-width: 320px;
     float: left;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+#kifrei__imgs2{
+    max-width: 320px;
+    float: right;
     border: 4px solid black;
     border-radius: 10px;
     margin-right: 50px;
@@ -709,7 +729,12 @@ html{
 }
 
 @media screen and (max-width:1100px) {
-    #kifrei__imgs{
+    #kifrei__imgs1{
+        float: none;
+        max-width: 280px;
+    }
+
+    #kifrei__imgs2{
         float: none;
         max-width: 280px;
     }
@@ -748,7 +773,7 @@ flex-wrap: wrap;
     padding: 20px;
     margin-bottom: 20px;
     text-align: left;
-    background-color: lightgray;
+    background-color: rgb(241, 241, 241);
 }
 
 .news p{
