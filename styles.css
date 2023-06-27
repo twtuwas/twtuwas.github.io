@@ -21,8 +21,7 @@ html{
     position: sticky;
     top: 0;
     z-index: 999;
-    position: relative;
-    box-shadow: 0 15px 50px black; 
+    box-shadow: 0 10px 75px black; 
 }
 
 
@@ -392,6 +391,7 @@ html{
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
+    
     
 }
 
@@ -837,7 +837,7 @@ flex-wrap: wrap;
 
 .intro__container{
     display: flex;
-    margin-top: 10px;
+    margin-top: 40px;
     text-align: center;
     padding: 50px;
     font-size: 3rem;
