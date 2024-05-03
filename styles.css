@@ -68,10 +68,13 @@ html{
     align-items: center;
     list-style: none;
     text-align: center;
+    height: 100%;
+    flex-direction: row;
+    
 }
 
 .navbar__item{
-    height: 80px;   
+    height: 80px;
 }
 
 .navbar__links{
@@ -108,6 +111,25 @@ html{
     color: white;
     transition: all 0.3s ease;
 }
+
+.dropdown-ul{
+    height: min-content;
+    background:linear-gradient(to right, #98FB98 0%, #FF7373 50%, #98FB98 100%);
+    display: none;
+    flex-direction: column;  
+    position: absolute;
+    top: 80px;
+    list-style: none;
+}
+
+.dropdown-ul li{
+    height: 70px;
+    width: 100%;
+}
+.navbar__item:hover .dropdown-ul{
+    display: flex;
+}
+
 
 @media screen and (max-width: 960px){
     .navbar__container{
@@ -161,9 +183,10 @@ html{
 
     .navbar__links{
         text-align: center;
-        padding: 2rem;
+        padding: 0;
         width: 100%;
-        display: table;
+        position: static;
+        display: block;
     }
 
     #mobile-menu{
@@ -201,6 +224,13 @@ html{
         transform: translateY(-8px) rotate(-45deg);
         
     }
+
+   
+
+    .navbar__item:hover .dropdown-ul{
+        display: none;
+    }
+
 }
 
 /*moving bg*/
