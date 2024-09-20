@@ -30,7 +30,7 @@ html{
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0 0 75px black; 
+    box-shadow: 0 0 25px grey; 
 }
 
 
@@ -457,7 +457,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 75px black; 
+    box-shadow: 0 0 25px grey; 
 }
 
 .footer__logo img{
