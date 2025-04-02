@@ -606,14 +606,15 @@ html{
 }
 
 .headline__aktion h2{
-    font-size: 4rem;
-    background-color: red;
+    font-size: 6rem;
+    font-family: twt;
     background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    
     
 }
 
@@ -627,8 +628,7 @@ html{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 20px;
-    min-height: 50vh;
+    margin-top: 30px;
     background: rgb(255, 255, 255);
 }
 
@@ -814,21 +814,20 @@ flex-wrap: wrap;
 }
 
 .anmeldung_kifrei--btn{
-    font-size: 1rem;
     background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
     color: white;
-    margin-top: 2rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
     cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
+    transition: transform 0.2s ease-in-out;
+    font-family: twt-text;
     width: 400px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 24px;
 }
+
 
 .anmeldung_kifrei--btn a{
     position: relative;
@@ -843,3 +842,89 @@ flex-wrap: wrap;
     cursor: pointer;
 }
 
+
+/*Kontaktfeld*/
+
+.kontakt__section {
+    padding: 3rem 2rem;
+    background: white;
+    text-align: center;
+    
+    
+}
+
+.kontakt__section h2 {
+    font-size: 3rem;
+    font-family: twt;
+    background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 2rem;
+}
+
+.kontakt__form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+    background-color: #ffffe1;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.kontakt__form input,
+.kontakt__form textarea {
+    padding: 0.8rem;
+    border: 2px solid #008000;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: twt-text;
+    color: #333;
+}
+
+.kontakt__form input:focus,
+.kontakt__form textarea:focus {
+    outline: none;
+    border-color: white;
+    
+}
+
+.kontakt__form button {
+    background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
+    color: white;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    font-family: twt-text;
+}
+
+.kontakt__form button:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(to top, rgb(3, 170, 3) 0%, rgb(4, 190, 4) 100%);
+}
+
+.kontakt__form .file-label {
+    text-align: left;
+    font-size: 1rem;
+    color: #004d4d;
+    margin-top: 0.5rem;
+}
+
+.kontakt__form input[type="file"] {
+    padding: 0.4rem;
+    background-color: #f5fff5;
+    border: 2px dashed #008000;
+    border-radius: 8px;
+}

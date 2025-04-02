@@ -50,42 +50,64 @@
             </div>
         </div>
     </div>
+
+
+    <div class="kontakt__section">
+        <h2>Kontakt aufnehmen</h2>
+        <form class="kontakt__form" onsubmit="return sendeMail();">
+            <input type="text" id="name" placeholder="Dein Name" required>
+            <input type="email" id="email" placeholder="Deine E-Mail" required>
+            <textarea id="nachricht" placeholder="Deine Nachricht" rows="5" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </div>
+
+    <script>
+        function sendeMail() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const nachricht = document.getElementById("nachricht").value;
+        
+            const mailtoLink = `mailto:kinderfreizeit@twtuwas.de?body=${encodeURIComponent(nachricht)}`;
+        
+            window.location.href = mailtoLink;
+            return false; // verhindert normales Absenden
+        }
+        </script>
+        
    
 
    
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                    <h2>Kontakt</h2>
-                    <a href="mailto:vorstand@twtuwas.de">vorstand@twtuwas.de</a>
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>Kontakt</h2>
+                        <a href="mailto:vorstand@twtuwas.de">vorstand@twtuwas.de</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Social Media</h2>
+                        <a href="https://www.instagram.com/twtuwas/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/people/TWTuwas-f%C3%BCr-Kinder-und-Jugendliche-eV-Schlo%C3%9Fborn/100064473408652/?locale=de_DE" target="_blank">Facebook</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Impressum</h2>
+                        <a href="Impressum.html" target="_blank">Impressum</a>
+                        <a href="Datenschutz.html" target="_blank">Datenschutzerklärung</a>
+                    </div>
                 </div>
-                <div class="footer__link--items">
-                    <h2>Social Media</h2>
-                    <a href="https://www.instagram.com/twtuwas/" target="_blank">Instagram</a>
-                    <a href="https://www.facebook.com/people/TWTuwas-f%C3%BCr-Kinder-und-Jugendliche-eV-Schlo%C3%9Fborn/100064473408652/?locale=de_DE" target="_blank">Facebook</a>
+            </div>
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="index.html" id="footer__logo"><img src="images/logo.png" alt="logo">
+                          TWTuwas 
+                        </a>
+                    </div>
+                    <p class="website__rights">© TWTuwas 2025. Alle Rechte vorbehalten.</p>
                 </div>
             </div>
         </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="" id="footer__logo"><img src="images/logo.png" alt="logo">
-                      TWTuwas 
-                    </a>
-                </div>
-                <p class="website__rights">© TWTuwas 2023. Alle Rechte vorbehalten.</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/people/TWTuwas-f%C3%BCr-Kinder-und-Jugendliche-eV-Schlo%C3%9Fborn/100064473408652/?locale=de_DE" class="social__icon--link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/twtuwas/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="app.js" ></script>
 </body>
