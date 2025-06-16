@@ -744,9 +744,11 @@ flex-wrap: wrap;
     -moz-text-fill-color: transparent;
     
 }
+ 
 
 .date__container h2{
     font-family: twt;
+    
 }
 
 .date{
