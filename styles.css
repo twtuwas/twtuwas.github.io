@@ -309,8 +309,8 @@ html{
 
 
 #main__img{
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -824,8 +824,9 @@ flex-wrap: wrap;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     font-family: twt-text;
-    width: 400px;
-    margin-top: 24px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 12px;
 }
 
 
@@ -842,6 +843,12 @@ flex-wrap: wrap;
     cursor: pointer;
 }
 
+.anmeldung_kifrei--btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* optional: fügt Abstand hinzu */
+}
 
 /*Kontaktfeld*/
 
@@ -863,6 +870,10 @@ flex-wrap: wrap;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 2rem;
+}
+
+.kontakt__section p {
+    font-size: 20px;
 }
 
 .kontakt__form {
@@ -927,4 +938,8 @@ flex-wrap: wrap;
     background-color: #f5fff5;
     border: 2px dashed #008000;
     border-radius: 8px;
+}
+
+.kontakt__form p {
+    font-size: 20px;
 }

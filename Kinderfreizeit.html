@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>twtuwas</title>
+    <title>Twtuwas für Kinder und Jugendliche e.V.</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,17 +17,27 @@
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Aktionen</a>
+                <li class="navbar__item"><a href="#actions" class="navbar__links">Aktionen</a>
+                            <ul class="dropdown-ul">
+                                <li><a href="Kinderfreizeit.html" class="navbar__links">Kinderfreizeit</a></li>
+                                <li><a href="Ferienspiele.html" class="navbar__links">Ferienspiele</a></li>
+                                <li><a href="Weihnachtswerkstatt.html" class="navbar__links">Weihnachtswerkstatt</a></li>
+                                <li><a href="Ostereggtion.html" class="navbar__links">Ostereggtion</a></li>
+                                <li><a href="ATWenT.html" class="navbar__links">ATWenT</a></li>
+                                <li><a href="Barfußpfad.html" class="navbar__links">Barfußpfad</a></li>
+                                <li><a href="SchloboFeste.html" class="navbar__links">Schloßborner Feste</a></li>
+                                <li><a href="Jugendfreizeit.html" class="navbar__links">Jugendfreizeit</a></li>
+                            </ul>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">News</a>
+                    <a href="Vorstand.html" class="navbar__links">Vorstand</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Vorstand</a>
+                    <a href="Downloads.html" class="navbar__links">Downloads</a>
                 </li>
             </ul>
         </div>
+    </nav>
     </nav>
 
     
@@ -54,26 +65,40 @@
 
     <div class="kontakt__section">
         <h2>Kontakt aufnehmen</h2>
-        <form class="kontakt__form" onsubmit="return sendeMail();">
-            <input type="text" id="name" placeholder="Dein Name" required>
-            <input type="email" id="email" placeholder="Deine E-Mail" required>
-            <textarea id="nachricht" placeholder="Deine Nachricht" rows="5" required></textarea>
-            <button type="submit">Absenden</button>
-        </form>
+    
+        <div id="kontaktFormularWrapper">
+            <form class="kontakt__form" onsubmit="return sendeMail();">
+                <p>Nachricht an <strong>kinderfreizeit@twtuwas.de</strong></p>
+                <input type="text" id="betreff" placeholder="Betreff" required>
+                <textarea id="nachricht" placeholder="Deine Nachricht" rows="5" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    
+        <div id="dankeNachricht" style="display: none;">
+            <p>Danke für Ihre Nachricht! Wir werden so schnell wie möglich antworten.</p>
+        </div>
     </div>
-
+    
     <script>
         function sendeMail() {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
+            const betreff = document.getElementById("betreff").value;
             const nachricht = document.getElementById("nachricht").value;
-        
-            const mailtoLink = `mailto:kinderfreizeit@twtuwas.de?body=${encodeURIComponent(nachricht)}`;
-        
+    
+            const mailtoLink = `mailto:kinderfreizeit@twtuwas.de?subject=${encodeURIComponent(betreff)}&body=${encodeURIComponent(nachricht)}`;
+            
+            // Öffnet das E-Mail-Programm
             window.location.href = mailtoLink;
-            return false; // verhindert normales Absenden
+    
+            // Formular ausblenden und Dankeschön anzeigen
+            document.getElementById("kontaktFormularWrapper").style.display = "none";
+            document.getElementById("dankeNachricht").style.display = "block";
+    
+            return false; // verhindert das normale Formular-Absenden
         }
-        </script>
+    </script>
+    
+    
         
    
 
