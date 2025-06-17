@@ -5,6 +5,7 @@ const navbarLinks = document.querySelectorAll('.navbar__links'); // Alle Links i
 menu.addEventListener('click', function () {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
+    menuLinks.style.maxHeight = menuLinks.classList.contains('active') ? '500px' : '0';
 });
 
 // Event Listener für jeden Link in der Navbar
