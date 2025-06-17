@@ -79,7 +79,8 @@ html{
     text-align: center;
     height: 100%;
     flex-direction: row;
-    
+    transition: all 0.3s ease-in-out; /* Glatte Animation */
+    overflow: hidden; /* Verhindert das Überspringen */
 }
 
 .navbar__item{
