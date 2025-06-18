@@ -16,7 +16,15 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .navbar{
@@ -123,13 +131,20 @@ html{
 }
 
 .dropdown-ul{
-    height: min-content;
+    height: 0;
+    overflow: hidden;
     background: #ff333c;
-    display: none;
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 80px;
     list-style: none;
+    border-radius: 0 0 12px 12px;   /* Nur unten abgerundet */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 0;
+    min-width: 200px;
+    z-index: 10;
+    transition: height 0.3s cubic-bezier(.4,0,.2,1), padding 0.3s cubic-bezier(.4,0,.2,1);
 }
 
 .dropdown-ul li{
@@ -140,6 +155,12 @@ html{
     display: flex;
 }
 
+/* Dropdown aktiv: Höhe auf Inhalt setzen, Padding sichtbar */
+.navbar__item:hover .dropdown-ul,
+.navbar__item:focus-within .dropdown-ul {
+    height: 384px; /* Passe ggf. an die Anzahl der Einträge an (z.B. 8 Einträge à 48px) */
+    padding: 0.5rem 0;
+}
 
 @media screen and (max-width: 960px){
     .navbar__container{
@@ -458,6 +479,7 @@ html{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 25px grey; 
+    margin-top: auto;
 }
 
 .footer__logo img{
@@ -945,3 +967,4 @@ flex-wrap: wrap;
 .kontakt__form p {
     font-size: 20px;
 }
+
