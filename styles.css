@@ -660,7 +660,7 @@ body {
     border: 4px solid black;
     border-radius: 10px;
     margin-right: 50px;
-    margin-right: 50px;
+    
 }
 
 #kifrei__imgs2{
@@ -669,7 +669,7 @@ body {
     border: 4px solid black;
     border-radius: 10px;
     margin-left: 50px;
-    margin-right: 50px;
+    
 }
 
 .text__box{
@@ -685,15 +685,19 @@ body {
     font-size: 20px;
 }
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:768px) {
     #kifrei__imgs1{
         float: none;
         max-width: 280px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     #kifrei__imgs2{
         float: none;
         max-width: 280px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .headline__aktion h2{
