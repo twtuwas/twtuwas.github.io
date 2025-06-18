@@ -672,10 +672,11 @@ body {
 
 .text__box{
     color: black;
+    text-align: center;
 }
 
 .text__box h2{
-    font-size: 36px;
+    font-size: 3rem;
 }
 
 .text__box p{
@@ -694,7 +695,7 @@ body {
     }
 
     .headline__aktion h2{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
