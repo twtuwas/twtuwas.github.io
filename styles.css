@@ -660,6 +660,7 @@ body {
     border: 4px solid black;
     border-radius: 10px;
     margin-right: 50px;
+    margin-right: 50px;
 }
 
 #kifrei__imgs2{
@@ -667,6 +668,7 @@ body {
     float: right;
     border: 4px solid black;
     border-radius: 10px;
+    margin-left: 50px;
     margin-right: 50px;
 }
 
