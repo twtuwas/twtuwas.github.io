@@ -903,7 +903,7 @@ flex-wrap: wrap;
 
 .anmeldung_kifrei--btn a{
     position: relative;
-    z-index: 2;
+    z-index: 0;
     color: white;
     text-decoration: none;
 }
@@ -954,7 +954,7 @@ flex-wrap: wrap;
     flex-direction: column;
     gap: 1.2rem;
     padding: 2rem;
-    background-color: #ffffe1;
+    background: linear-gradient(180deg, #fffde9 0%, #fff9dc 100%);
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
@@ -1014,4 +1014,102 @@ flex-wrap: wrap;
 .kontakt__form p {
     font-size: 20px;
 }
+
+
+/*Teamkarten*/
+
+.container {
+   background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.container h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: twt;
+    background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.team-grid {
+ display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+ 
+
+.team-card {
+   margin: 1rem;
+    height: 100%;
+    width: 300px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #fffde9 0%, #fff9dc 100%);
+    overflow: hidden;
+    background-size: cover;
+    position: relative;
+    color: black;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+
+
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.team-card__image {
+               /* limit overall size */
+  max-height: 300px;
+  width: auto;
+  background-color: #ffffe1;  /* optional placeholder when aspect ratios differ */
+  margin: 10px auto 0;  
+  border-radius: 50px;
+  border: 4px solid #4b5563;
+  display: block;
+}
+
+
+.team-card__content {
+  padding: 22px;
+}
+
+.team-card__content h2 {
+  font-size: 1.4rem;
+  color: #166534;
+  margin-bottom: 10px;
+}
+
+.team-card__content p {
+  font-size: 0.98rem;
+  color: #4b5563;
+  text-align: center;
+}
+.team-card__content h2 {
+   font-size: 2rem;
+    text-align: center;
+    font-family: twt;
+    background-image: linear-gradient(to top, green 0%, rgb(5, 224, 5) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 0;
+    
+}
+
+
+
 
