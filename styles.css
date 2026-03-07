@@ -25,6 +25,10 @@ body {
     flex-direction: column;
 }
 
+.content {
+    flex: 1;
+}
+
 
 
 .navbar{
@@ -509,6 +513,8 @@ body {
 
 
 /*Footer*/
+
+
 
 .footer__container{
     /*background: linear-gradient(to right, #98FB98 0%, #FF7373 50%, #98FB98 100%);*/
